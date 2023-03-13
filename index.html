@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="Clock_app.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <script src="vendors/bootstrap/js/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+   <div class="house">
+       <div class="text">00:00:00</div>
+       <div class="control">
+           <input type="datetime-local" name="date" class="name" onchange="setAlarmValue(this.value)">
+           <button class="btn btn-primary set">Set Alarm</button>
+           <button class="btn btn-danger remove">Remove</button>
+       </div>
+   </div>
+</body>
+<script src="Clock_app.js"></script>
+</html>
